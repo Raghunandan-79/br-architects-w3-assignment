@@ -12,7 +12,6 @@ body {
   background-color: #fff;
 }
 
-/* Navigation Bar */
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -52,7 +51,6 @@ body {
   color: #000;
 }
 
-/* Hero Section */
 .hero {
   display: flex;
   background-image: url(https://www.w3schools.com/w3images/architect.jpg);
@@ -63,7 +61,7 @@ body {
   background-size: cover;
   align-items: center;
   justify-content: center;
-  margin: 55px auto 0 auto; /* Centered with max-width and top padding */
+  margin: 55px auto 0 auto; 
   max-width: 1500px;
   width: 100%;
   position: relative;
@@ -85,14 +83,16 @@ body {
 }
 
 .projects-heading,
-.about-heading {
+.about-heading,
+.contact-heading {
   padding: 32px 16px 16px 16px;
   max-width: 1500px;
   margin: 0 auto;
 }
 
 .projects-heading h3,
-.about-heading h3 {
+.about-heading h3,
+.contact-heading h3 {
   font-size: 24px;
   font-weight: 400;
   border-bottom: 1px solid #f1f1f1;
@@ -132,8 +132,8 @@ body {
   z-index: 10;
 }
 
-/* About Description */
-.about-description {
+.about-description,
+.contact-description {
   padding: 16px 16px;
   max-width: 1500px;
   margin: 0 auto;
@@ -142,7 +142,6 @@ body {
   color: #000;
 }
 
-/* About Grid */
 .about-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -204,4 +203,65 @@ body {
 .contact-btn:hover {
   background-color: #ccc;
   color: #000;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 1685px;
+  padding-left: 215px;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.contact-form input {
+  padding: 10px;
+}
+
+.contact-form button {
+  width: 150px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.contact-form button:hover {
+  background-color: gray;
+  color: black;
+}
+
+.below-hero {
+  background-image: url(https://www.w3schools.com/w3images/map.jpg);
+  display: flex;
+  height: 800px;
+  max-height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  margin: 55px auto 0 auto; 
+  max-width: 1480px;
+  width: 100%;
+  position: relative;
+}
+
+.footer-content {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+.footer-content a {
+  color: white;
 }
